@@ -1,0 +1,36 @@
+QMainWindow
+  {
+    background-image: url(sky.jpg);
+    
+    
+   }
+QListWidget
+  {
+   background-color:transparent;
+   border-style:transparent;
+  }
+
+                                      
+QScrollBar:vertical{background:transparent;border-style:none;}
+QScrollBar:handle:vertical
+  {
+    background:rgba(220,000,000,0.8)
+  }
+QScrollBar:add-page:vertical{background:transparent}
+QScrollBar:sub-page:vertical{background:rgba(0,100,200,0.8);}
+
+QScrollBar:add-line:vertical,QScrollBar:sub-line:vertical
+  {
+    background:transparent;
+  }
+
+QPushButton
+  {
+    background:rgba(0,100,200,0.8);
+  }
+QSlider:handle:horizontal
+  {
+    
+    background:rgba(220,000,000,0.8)
+    
+  }

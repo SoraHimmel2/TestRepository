@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'GUI.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(799, 577)
+        MainWindow.setStyleSheet("")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName("gridLayout")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.search_song = QtWidgets.QLineEdit(self.centralwidget)
+        self.search_song.setMaximumSize(QtCore.QSize(258, 16777215))
+        self.search_song.setObjectName("search_song")
+        self.verticalLayout.addWidget(self.search_song)
+        self.list = QtWidgets.QListWidget(self.centralwidget)
+        self.list.setMaximumSize(QtCore.QSize(258, 16777215))
+        self.list.setStyleSheet("")
+        self.list.setObjectName("list")
+        self.verticalLayout.addWidget(self.list)
+        self.gridLayout.addLayout(self.verticalLayout, 0, 0, 5, 1)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.pause_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.pause_btn.setMinimumSize(QtCore.QSize(32, 32))
+        self.pause_btn.setMaximumSize(QtCore.QSize(32, 32))
+        self.pause_btn.setText("")
+        self.pause_btn.setObjectName("pause_btn")
+        self.horizontalLayout.addWidget(self.pause_btn)
+        self.prev_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.prev_btn.setMinimumSize(QtCore.QSize(32, 25))
+        self.prev_btn.setMaximumSize(QtCore.QSize(32, 25))
+        self.prev_btn.setText("")
+        self.prev_btn.setObjectName("prev_btn")
+        self.horizontalLayout.addWidget(self.prev_btn)
+        self.stop_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.stop_btn.setMinimumSize(QtCore.QSize(25, 25))
+        self.stop_btn.setMaximumSize(QtCore.QSize(25, 25))
+        self.stop_btn.setText("")
+        self.stop_btn.setObjectName("stop_btn")
+        self.horizontalLayout.addWidget(self.stop_btn)
+        self.next_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.next_btn.setMinimumSize(QtCore.QSize(32, 25))
+        self.next_btn.setMaximumSize(QtCore.QSize(32, 25))
+        self.next_btn.setText("")
+        self.next_btn.setObjectName("next_btn")
+        self.horizontalLayout.addWidget(self.next_btn)
+        spacerItem = QtWidgets.QSpacerItem(368, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
+        self.gridLayout.addLayout(self.horizontalLayout, 4, 1, 1, 1)
+        self.sld = QtWidgets.QSlider(self.centralwidget)
+        self.sld.setOrientation(QtCore.Qt.Horizontal)
+        self.sld.setObjectName("sld")
+        self.gridLayout.addWidget(self.sld, 3, 1, 1, 1)
+        self.MusicImage = QtWidgets.QLabel(self.centralwidget)
+        self.MusicImage.setMinimumSize(QtCore.QSize(310, 410))
+        self.MusicImage.setText("")
+        self.MusicImage.setObjectName("MusicImage")
+        self.gridLayout.addWidget(self.MusicImage, 0, 1, 2, 1)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 799, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.search_song.setToolTip(_translate("MainWindow", "Search"))
+        self.pause_btn.setToolTip(_translate("MainWindow", "Pause"))
+        self.prev_btn.setToolTip(_translate("MainWindow", "Prev"))
+        self.stop_btn.setToolTip(_translate("MainWindow", "Stop"))
+        self.next_btn.setToolTip(_translate("MainWindow", "Next"))
+
